@@ -19,3 +19,6 @@ Test uhm-counter
 ```
 pytest
 ```
+
+Open the uhm-counter in your browser:
+http://localhost:8000/docs
