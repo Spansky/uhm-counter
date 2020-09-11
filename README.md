@@ -12,5 +12,10 @@ pip install -r requirements.txt
 
 Run uhm-counter
 ```
-python main.py
+uvicorn main:app --reload
+```
+
+Test uhm-counter
+```
+pytest
 ```
