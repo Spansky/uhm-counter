@@ -11,7 +11,7 @@
 	onMount(() => {
 		const interval = setInterval(() => {
 			getCounter().then(data => {counter = data});
-		}, 1000);
+		}, 5000);
 
 	return () => {
 			clearInterval(interval);
