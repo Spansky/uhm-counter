@@ -19,5 +19,7 @@ services:
     build: ./backend
     container_name: uhm-service
     image: uhm-service
+    environment: 
+      - MAX_WORKERS=1
     ports:
         - 8000:80
