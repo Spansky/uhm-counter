@@ -3,7 +3,7 @@
 	let counter = '...';
 
 	async function getCounter() {
-        const response = await fetch('http://localhost:8000');
+        const response = await fetch('http://uhm.codepals.com:8000');
 		const json = await response.json();
 		return json.counter;
     };
