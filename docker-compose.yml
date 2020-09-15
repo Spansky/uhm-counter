@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+  uhm-ui:
+    container_name: uhm-ui
+    image: uhm-ui
+    build: ./frontend
+    ports:
+      - 80:5000
+      - 10000:10000
+    volumes:
+      - ./frontend:/ui
+    command: sh /ui/start.sh
+    environment: 
+      - RUN_ENV=dev
+      - APP_HOME=/ui
+      - HOST=0.0.0.0
+
+  uhm_service:
+    build: ./backend
+    container_name: uhm-service
+    image: uhm-service
+    ports:
+        - 8000:80
