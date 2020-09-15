@@ -3,7 +3,9 @@
     import BigCounter from "./pages/BigCounter.svelte";
     import SmallCounter from "./pages/SmallCounter.svelte";
     import UserCounter from "./pages/UserCounter.svelte";
-    import AdminCounter from "./pages/AdminCounter.svelte";
+	import AdminCounter from "./pages/AdminCounter.svelte";
+	import ServerlessIncrease from "./pages/ServerlessIncrease.svelte";
+	import ServerlessBigCounter from "./pages/ServerlessBigCounter.svelte";
 </script>
 
 <Router>
@@ -11,6 +13,8 @@
 		<Route path="/" component={UserCounter} />
         <Route path="/small" component={SmallCounter} />
 		<Route path="/big" component={BigCounter} />
+		<Route path="/big_s" component={ServerlessBigCounter} />
+		<Route path="/inc_s" component={ServerlessIncrease} />
         <Route path="/babo" component={AdminCounter} />
 	</div>
 </Router>
